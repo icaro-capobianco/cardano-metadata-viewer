@@ -59,11 +59,11 @@ export const List : FunctionalComponent = () => {
 								<AccordionIcon />
 							</AccordionButton>
 							<AccordionPanel pb={4}>
-								<Flex justify='space-between' w='xs'>
+								<Flex justify='space-between' maxW='xs' w='full'>
 									<b>Fees</b>
 									₳{epoch.fees/1000000}
 								</Flex>
-								<Flex justify='space-between' w='xs'>
+								<Flex justify='space-between' maxW='xs' w='full'>
 									<b>Transactions</b>
 									{epoch.transactionsCount}
 								</Flex>
