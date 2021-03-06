@@ -7,6 +7,7 @@
     "dev": "preact watch --src src --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender --host localhost",
     "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
 		"deploy": "gh-pages -d build",
+    "homepage": "https://getsmartgroup.github.io/cardano-meta-handler",
     "predeploy": "pnpm build"
   },
   "dependencies": {

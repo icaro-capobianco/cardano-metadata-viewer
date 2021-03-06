@@ -1,8 +1,9 @@
-import { Accordion, AccordionItem, Text, Skeleton, Stack, Flex, AccordionPanel, AccordionButton, AccordionIcon, Box, Heading } from '@chakra-ui/react'
+import { Accordion, AccordionItem, Text, Skeleton, Stack, Flex, AccordionPanel, AccordionButton, AccordionIcon, Box, Heading, Link } from '@chakra-ui/react'
 import { FunctionalComponent, h } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import { Epoch } from '../..'
 import { useAppActions } from '../../../app/context'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 export const List : FunctionalComponent = () => {
 
@@ -23,6 +24,23 @@ export const List : FunctionalComponent = () => {
 	return (
 		<Box w='full' >
 			<Heading>Cardano Epoch Listing</Heading>
+			<Text>
+				Built using
+				<br/>
+				<Link href="https://chakra-ui.com" isExternal>
+					Gimbalabs GraphQL API <ExternalLinkIcon mx="2px" />
+				</Link>
+				<Link href="https://chakra-ui.com" isExternal>
+				    Chakra UI <ExternalLinkIcon mx="2px" />
+				</Link>
+				<Link href="https://preactjs.com" isExternal>
+					Preact <ExternalLinkIcon mx="2px" />
+				</Link>
+				<br/>
+				<Link href="https://github.com/icaro-capobianco/cardano-metadata-viewer" isExternal>
+					Github Repo <ExternalLinkIcon mx="2px" />
+				</Link>
+			</Text>
 			{ loading ? (
 				<Stack>
 					<Skeleton height="20px" />

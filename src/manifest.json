@@ -1,7 +1,7 @@
 {
   "name": "Cardano Metadata Viewer",
   "short_name": "Cardano Metadata Viewer",
-  "start_url": "/",
+  "start_url": "/cardano-meta-handler",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
