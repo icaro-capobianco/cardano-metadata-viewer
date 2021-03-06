@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "preact watch --src src --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender --host localhost",
-    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender"
+    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
+		"deploy": "gh-pages -d build",
+    "predeploy": "pnpm build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.5",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "preact-cli": "^3.0.5",
     "react": "^17.0.1",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "gh-pages": "^3.1.0"
   }
 }
