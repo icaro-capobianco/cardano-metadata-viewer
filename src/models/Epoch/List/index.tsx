@@ -61,7 +61,7 @@ export const List : FunctionalComponent = () => {
 							<AccordionPanel pb={4}>
 								<Flex justify='space-between' maxW='xs' w='full'>
 									<b>Fees</b>
-									₳{epoch.fees/1000000}
+									₳{(epoch.fees/1000000).toLocaleString()}
 								</Flex>
 								<Flex justify='space-between' maxW='xs' w='full'>
 									<b>Transactions</b>
