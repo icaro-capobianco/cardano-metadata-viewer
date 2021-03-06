@@ -3,7 +3,7 @@ export default {
     webpack(config, env, helpers) {
         
         if( env.production ) {
-            config.output.publicPath = "/cardano-meta-handler/";
+            config.output.publicPath = "/cardano-metadata-viewer/";
         }
         config.resolve.alias["preact-cli-entrypoint"] = resolve(
             process.cwd(),
