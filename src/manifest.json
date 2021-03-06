@@ -1,6 +1,6 @@
 {
-  "name": "Ícaro C.C.",
-  "short_name": "Ícaro C.C.",
+  "name": "Cardano Metadata Viewer",
+  "short_name": "Cardano Metadata Viewer",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

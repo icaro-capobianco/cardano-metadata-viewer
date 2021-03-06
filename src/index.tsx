@@ -1,3 +1,4 @@
 import { render, h } from 'preact';
+import { App } from './app';
 
-render( <div>Hello World</div> , document.body );
+render( <App/>, document.body );

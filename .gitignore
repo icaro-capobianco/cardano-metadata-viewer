@@ -1,8 +1,10 @@
 node_modules
 yarn.lock
-package-lock.json
-size-plugin.json
-build
-yarn-error.log
+.yarn
+.pnp.js
 .vscode
+pnpm-lock.yaml
+package-lock.json
 .env
+build
+size-plugin.json

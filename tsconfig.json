@@ -9,7 +9,6 @@
 		"target": "ES5",
 		"outDir": "lib",
 		"moduleResolution": "node",
-		"skipLibCheck": true,
 
 		"strict": true,
 		"noImplicitAny": true,
@@ -23,7 +22,8 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true,
 		"jsx": "react",
-		"jsxFactory": "h"
+		"jsxFactory": "h",
+		"skipLibCheck": true
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "lib", "**/*.test.ts", "**/*/__tests__"]
