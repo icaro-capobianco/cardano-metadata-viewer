@@ -1,13 +1,13 @@
 {
   "name": "cardano-metadata-viewer",
   "version": "1.0.0",
-  "author": "trades.org",
+  "author": "Ícaro C. Capobianco",
+  "homepage": "https://icaro-capobianco.github.io/cardano-metadata-viewer",
   "license": "MIT",
   "scripts": {
     "dev": "preact watch --src src --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender --host localhost",
     "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
 		"deploy": "gh-pages -d build",
-    "homepage": "https://getsmartgroup.github.io/cardano-metadata-viewer",
     "predeploy": "pnpm build"
   },
   "dependencies": {
